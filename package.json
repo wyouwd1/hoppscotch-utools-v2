@@ -72,5 +72,18 @@
       "prisma",
       "vue-demi"
     ]
-  }
+  },
+  "main": ".prettierrc.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyouwd1/hoppscotch-utools-v2.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/wyouwd1/hoppscotch-utools-v2/issues"
+  },
+  "homepage": "https://github.com/wyouwd1/hoppscotch-utools-v2#readme"
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>Hoppscotch • API 测试工具</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- uTools 环境标识 -->
+    <meta name="utools-plugin" content="hoppscotch" />
+    <style>
+      /* uTools 插件样式调整 */
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      #app {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      // uTools 环境全局变量
+      window.UTOOLS_ENV = true
+      window.IS_UTOOLS_PLUGIN = true
+      
+      // Shims to make swagger-parser package work
+      window.global = window
+      
+      // 禁用 PWA 相关功能
+      window.navigator.serviceWorker = undefined
+      
+      // Cookie 协议默认同意
+      if (typeof document !== 'undefined') {
+        document.cookie = "cookieConsent=accepted; path=/; max-age=31536000"
+      }
+    </script>
+    <script type="module">
+      import { Buffer } from "buffer"
+      import process from "process"
+
+      // Shims to make postman-collection work
+      window.Buffer = Buffer
+      window.process = process
+    </script>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

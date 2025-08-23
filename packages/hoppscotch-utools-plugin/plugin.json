@@ -1,0 +1,32 @@
+{
+  "pluginName": "Hoppscotch",
+  "version": "2025.1.0",
+  "description": "Http/WebSocket/GraphQL/Api 请求调试工具，帮助你更快地创建请求，节省宝贵的开发时间",
+  "author": "hoppscotch-utools-v2",
+  "homepage": "https://github.com/your-username/hoppscotch-utools-v2",
+  "logo": "icon.png",
+  "main": "index.html",
+  "preload": "preload.js",
+  "platform": ["win32", "darwin", "linux"],
+  "development": {
+    "main": "index.html",
+    "preload": "preload.js"
+  },
+  "features": [
+    {
+      "code": "hoppscotch",
+      "explain": "Hoppscotch API 测试工具 - 快速、美观的 API 请求构建器",
+      "cmds": [
+        "api",
+        "接口测试", 
+        "hoppscotch",
+        "postman",
+        "http请求",
+        "api测试",
+        "rest",
+        "graphql",
+        "websocket"
+      ]
+    }
+  ]
+}
